@@ -1,0 +1,26 @@
+# Entorno virtual
+venv/
+Ruvenv/
+
+# Archivos de compilación de Python
+__pycache__/
+*.pyc
+
+# Archivos de Django
+db.sqlite3
+*.log
+
+# Archivos de entorno
+.env
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Archivos de migración (opcional si son grandes)
+*/migrations/*
+!*/migrations/__init__.py
