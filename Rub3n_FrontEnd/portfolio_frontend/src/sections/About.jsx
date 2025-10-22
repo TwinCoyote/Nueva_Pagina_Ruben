@@ -5,7 +5,7 @@ import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/FrameWorks";
 import Emailcard from "../components/Email-card";
 import { FlickeringGrid } from "../components/FlickeringGrid";
-import { Globe } from "../components/globe";
+
 
 const About = () => {
   const grid2Container = useRef();
