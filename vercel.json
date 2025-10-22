@@ -1,0 +1,5 @@
+{
+  "installCommand": "cd Rub3n_FrontEnd/portfolio_frontend && npm ci --ignore-scripts",
+  "buildCommand": "cd Rub3n_FrontEnd/portfolio_frontend && npm run build",
+  "outputDirectory": "Rub3n_FrontEnd/portfolio_frontend/dist"
+}
