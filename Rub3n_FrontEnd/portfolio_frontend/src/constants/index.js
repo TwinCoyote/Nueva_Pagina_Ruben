@@ -144,7 +144,6 @@ export const myProjects = [
         path: "/assets/logos/ESP32.svg",
       },
       {
-
         id: 5,
         name: "Fusion 360",
         path: "/assets/logos/Fusion.png",
@@ -173,16 +172,17 @@ export const mySocials = [
 
 export const experiences = [
   {
-  title: "Hardware Engineer & Founder",
-  job: "Self-Employed – Industrial Electronics Services",
-  date: "2020–2024",
-  contents: [
-    "Founded and operated a company specializing in the design, repair, and maintenance of electronic control boards for industrial washing machines.",
-    "Designed custom PCBs, optimized circuits, and implemented hardware solutions for industrial automation systems.",
-    "Performed troubleshooting and diagnostics on complex electronic systems, ensuring high reliability and minimizing downtime for clients.",
-    "Managed client relationships, project timelines, and end-to-end delivery, demonstrating technical and entrepreneurial skills.",
-    "Developed skills in embedded system design, microcontroller programming (C/C++), and integration with mechanical and electrical industrial systems."
-  ],
+    title: "Hardware Engineer & Founder",
+    job: "Self-Employed – Industrial Electronics Services",
+    date: "2020–2024",
+    contents: [
+      "Founded and operated a company specializing in the design, repair, and maintenance of electronic control boards for industrial washing machines.",
+      "Designed custom PCBs, optimized circuits, and implemented hardware solutions for industrial automation systems.",
+      "Performed troubleshooting and diagnostics on complex electronic systems, ensuring high reliability and minimizing downtime for clients.",
+      "Managed client relationships, project timelines, and end-to-end delivery, demonstrating technical and entrepreneurial skills.",
+      "Developed skills in embedded system design, microcontroller programming (C/C++), and integration with mechanical and electrical industrial systems.",
+    ],
+    logo: "/assets/logos/search.png",
   },
   {
     title: "Freelance Web Developer",
@@ -192,8 +192,9 @@ export const experiences = [
       "Designed and developed professional websites for real clients, handling both front-end and deployment processes.",
       "Built responsive and visually appealing web solutions using React, Vite, and Tailwind CSS.",
       "Managed client requirements, revisions, and delivery timelines while pursuing an engineering degree.",
-      "Developed a personal portfolio with Three.js and WebAPI integrations to showcase technical projects and design capabilities."
+      "Developed a personal portfolio with Three.js and WebAPI integrations to showcase technical projects and design capabilities.",
     ],
+    logo: "/assets/logos/RR.png",
   },
   {
     title: "Selected for Tesla Internship Program – Cell Engineering",
@@ -202,51 +203,50 @@ export const experiences = [
     contents: [
       "Successfully passed technical interviews and assessment exams for the Tesla Cell Engineering Internship in Palo Alto, California.",
       "Selection recognized for strong analytical and engineering skills.",
-      "Program was discontinued before start due to external policy changes (Program Canceled Before Start)."
+      "Program was discontinued before start due to external policy changes (Program Canceled Before Start).",
     ],
+    logo: "/assets/logos/Tesla.jpg",
   },
   {
     title: "Software Developer",
     job: "Grupo Dimakers",
     date: "2025–Present",
     contents: [
-      "Developed full-stack web solutions using React, Django, and RESTful APIs to support digitalization and automation projects.",
+      "Developed web solutions using React, Django, and RESTful APIs to support digitalization and automation projects.",
       "Built responsive interfaces, CRUD systems, and API integrations focused on reliability and scalability.",
       "Led the development of an attendance control platform (clock-in system) covering front-end, back-end, and hardware integration.",
       "Collaborated on embedded system projects, including a facial-recognition access control device with 3D-printed casing and hardware assembly.",
-      "Bridged web and embedded technologies to deliver connected, real-world solutions — combining software design with hands-on hardware development."
+      "Bridged web and embedded technologies to deliver connected, real-world solutions — combining software design with hands-on hardware development.",
     ],
-    logo:"../public/assets/logos/Tesla.jpg",
+    logo: "/assets/logos/dimakers.png",
   },
-
-
-
 ];
 export const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
+    name: "Lino Reyna",
+    username: "@LRCMX",
+    body: "We needed a website that looked professional and trustworthy. The new Contadores Reyna site is clear, easy to navigate, and has helped us get more client inquiries.",
+    img: "https://robohash.org/Lino",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
+    name: "Grupo Guerrero del Norte",
+    username: "@Grupo_GN",
+    body: "We manage several services (rentals, glass, security) and needed a single website that unified everything in a modern and organized way. We loved the design delivered for Grupo GN.",
+    img: "https://robohash.org/Guerrero",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
+    name: "Anonymous Client",
+    username: "@----",
+    body: "I liked the Jammer — now I don’t have any more problems with my noisy neighbor.",
+    img: "https://robohash.org/Rebeca",
   },
   {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
+    name: "Marcos",
+    username: "@marcs_01",
+    body: "The jammer worked great!",
     img: "https://robohash.org/alice",
   },
+
   {
     name: "Bob",
     username: "@bob",

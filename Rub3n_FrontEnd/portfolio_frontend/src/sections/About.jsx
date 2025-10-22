@@ -98,7 +98,7 @@ const About = () => {
               
             </p>
             <figure className="absolute left-[80%] top-[10%]">
-              <Globe/>
+              {/* <Globe/> */}
             </figure>
 
           </div>
