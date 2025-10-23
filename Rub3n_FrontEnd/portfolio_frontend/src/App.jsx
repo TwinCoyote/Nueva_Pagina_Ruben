@@ -1,26 +1,20 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Landing from "./pages/Landing";
+import OtraPagina from "./pages/Certifications";
 import Navbar from "./sections/Navbar";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Experiences from "./sections/Experiences";
-import Testimonials from "./sections/Testimonials";
-import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
-const App = () => {
+export default function App() {
   return (
-    <div className="container mx-auto max-w-7xl">
+    <Router>
+      <ScrollToTop />
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Experiences />
-      <Testimonials />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/Certifications" element={<OtraPagina />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
-};
-
-export default App;
+}

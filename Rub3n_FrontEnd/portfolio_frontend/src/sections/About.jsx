@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import Card from "../components/Card";
 
 import CopyEmailButton from "../components/CopyEmailButton";
@@ -6,14 +7,14 @@ import { Frameworks } from "../components/FrameWorks";
 import Emailcard from "../components/Email-card";
 import { FlickeringGrid } from "../components/FlickeringGrid";
 
-
 const About = () => {
   const grid2Container = useRef();
   return (
-    <section className="c-space section-spacing" id="about">
-      <h2 className="text-heading">About Me</h2>
+    <section className="c-space section-spacing">
+      <h2 className="text-heading" id="about">
+        About Me
+      </h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
-        
         {/* Grid 1 */}
         <div className="flex items-end grid-default-color grid-1">
           <img
@@ -87,23 +88,29 @@ const About = () => {
         </div>
 
         {/* Grid 3 */}
-        
+
         <div className="bg-black grid-3 relative">
-          <FlickeringGrid className="absolute inset-0 z-0" />
+          <Link
+            to="/Certifications"
+            className="block hover:opacity-80 transition-opacity"
+          >
+            <FlickeringGrid className="absolute inset-0 z-0" />
 
-          <div className="fz-10 w-[50%] relative z-10 p-4">
-            <p className="headtext text-4xl font-bold text-white">Certifications</p>
-            <p className="subtext text-lg text-gray-200 mt-4">
-              I have earned certifications from recognized global institutions that validate my skills in electronics, embedded systems, and software development. 
-              
-            </p>
-            <figure className="absolute left-[80%] top-[10%]">
-              {/* <Globe/> */}
-            </figure>
-
-          </div>
+            <div className="fz-10 w-[50%] relative z-10 p-4">
+              <p className="headtext text-4xl font-bold text-white">
+                Certifications
+              </p>
+              <p className="subtext text-lg text-gray-200 mt-4">
+                I have earned certifications from recognized global institutions
+                that validate my skills in electronics, embedded systems, and
+                software development.
+              </p>
+              <figure className="absolute left-[80%] top-[10%]">
+                {/* <Globe/> */}
+              </figure>
+            </div>
+          </Link>
         </div>
-
 
         {/* Grid 4 */}
         <div className="grid-special-color grid-4">
