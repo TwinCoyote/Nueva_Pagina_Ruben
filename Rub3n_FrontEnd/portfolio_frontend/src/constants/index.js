@@ -43,7 +43,7 @@ export const myProjects = [
       "A comprehensive website was developed for an industrial group, integrating individual pages for each company with descriptions, contact forms, and product catalogs",
       "Additionally, a centralized website for the entire group was created, along with professional email services using the group’s domain.",
     ],
-    href: "",
+    href: "https://www.grupogn.com/",
     logo: "",
     image: "/assets/projects/guerrero.png",
     tags: [
