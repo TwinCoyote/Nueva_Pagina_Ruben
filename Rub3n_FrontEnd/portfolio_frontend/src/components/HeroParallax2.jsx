@@ -69,7 +69,6 @@ export const HeroParallax = ({ products }) => {
               translate={translateXReverse}
               key={product.title}
             />
-            
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
@@ -90,10 +89,10 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        My Certifications <br /> & Continuous Learning
+        My Projects <br /> & Technical Experience
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        These certifications reflect my commitment to continuous learning and
+        These projects reflect my commitment to continuous learning and
         technical excellence. Each one represents a step forward in my journey
         as an electronics and software engineer.
       </p>

@@ -16,8 +16,13 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <Link className="nav-links" to="/Certifications">
+        <a className="nav-links" href="/#certifications">
           Certifications
+        </a>
+      </li>
+      <li className="nav-li">
+        <Link className="nav-links" to="/Projects">
+          Projects
         </Link>
       </li>
       <li className="nav-li">

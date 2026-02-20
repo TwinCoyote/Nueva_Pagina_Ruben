@@ -14,27 +14,52 @@ const Project = ({
   return (
     <>
       <div
-        className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
+        className="group relative h-full bg-gradient-to-br from-white/[0.05] to-white/[0.01] border border-white/10 rounded-2xl p-6 backdrop-blur-md hover:border-cyan-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/10 flex flex-col justify-between"
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
         <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
+          <div className="flex justify-between items-start mb-4">
+            <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors duration-300">
+              {title}
+            </h3>
+            <div className="p-2 rounded-lg bg-white/5 group-hover:bg-cyan-500/10 transition-colors duration-300">
+              <img src="assets/arrow-right.svg" className="w-4 h-4 text-neutral-400 group-hover:text-cyan-400" />
+            </div>
+          </div>
+
+          <p className="text-neutral-400 text-sm leading-relaxed mb-6 line-clamp-3">
+            {description}
+          </p>
+
+          <div className="flex flex-wrap gap-2 mb-6">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span
+                key={tag.id}
+                className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 border border-white/10 text-neutral-300 group-hover:border-cyan-500/30 group-hover:text-cyan-200 transition-all duration-300"
+              >
+                {tag.name}
+              </span>
             ))}
           </div>
         </div>
+
         <button
           onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
+          className="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-300 font-semibold hover:from-cyan-500/30 hover:to-blue-500/30 hover:text-white hover:border-cyan-400 transition-all duration-300 flex items-center justify-center gap-2 group/btn"
         >
-          Read More
-          <img src="assets/arrow-right.svg" className="w-5" />
+          View Details
+          <svg
+            className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
         </button>
       </div>
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
+
       {isHidden && (
         <ProjectDetails
           title={title}

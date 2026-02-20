@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/Certifications" element={<OtraPagina />} />
+        <Route path="/Projects" element={<OtraPagina />} />
       </Routes>
       <Footer />
     </Router>

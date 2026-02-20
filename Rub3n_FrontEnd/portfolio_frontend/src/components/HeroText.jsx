@@ -1,102 +1,62 @@
 import React from "react";
-import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 
 export const HeroText = () => {
-  const words = [
-    "Secure",
-    "Robust",
-    "Reliable",
-    "Adaptative",
-    "Precise",
-    "Innovative",
-    "Dynamic",
-    "Custom",
-  ];
   const variants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
   };
-  return (
-    <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
-      {/* Vista de Escitorio */}
-      <div className=" flex-col hidden md:flex c-space">
-        <motion.h1
-          className="text-4xl font-medium"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1 }}
-        >
-          Hi! I'm Ruben
-        </motion.h1>
-        <div className="flex flex-col items-start">
-          <motion.p
-            className="text-5xl font-medium text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.2 }}
-          >
-            A Developer <br /> Dedicated to Creating
-          </motion.p>
-          <div>
-            <FlipWords
-              words={words}
-              className="font-black text-white text-8xl"
-            />
-          </div>
-          <motion.p
-            className="text-4xl font-medium text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.4 }}
-          >
-            Embedded Solutions
-          </motion.p>
-        </div>
-      </div>
 
-      {/* Vista de Celular */}
-      <div className="flex- flex-col space-y-6 md:hidden">
-        <motion.p
-          className="text-4xl font-medium"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1 }}
+  return (
+    <div className="relative z-10 flex flex-col items-center justify-center text-center w-full px-4 pt-16 md:pt-24 pointer-events-none">
+      <motion.p
+        className="text-lg md:text-xl font-medium text-cyan-500 mb-4 tracking-[0.2em] uppercase"
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        Ruben • Embedded Systems Engineer
+      </motion.p>
+
+      <motion.h1
+        className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white mb-6 leading-tight"
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.8, duration: 0.8 }}
+      >
+        Embedded <br className="hidden md:block" /> Intelligence.
+      </motion.h1>
+
+      <motion.p
+        className="text-xl md:text-3xl font-light text-neutral-400 max-w-2xl leading-relaxed"
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 1.1, duration: 0.8 }}
+      >
+        Precision firmware. Robust hardware. <br />
+        <span className="text-white">Built for the real world.</span>
+      </motion.p>
+
+      <motion.div
+        className="mt-12 pointer-events-auto"
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 1.4, duration: 0.8 }}
+      >
+        <a
+          href="/Projects"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black text-lg font-semibold rounded-full hover:bg-neutral-200 transition-colors duration-300"
         >
-          {" "}
-          Hola! Soy Ruben{" "}
-        </motion.p>
-        <div>
-          <motion.p
-            className="text-5xl font-black text-neutral-300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.2 }}
-          >
-            Building
-          </motion.p>
-          <div>
-            <FlipWords
-              words={words}
-              className="font-bold text-white text-7xl"
-            />
-          </div>
-          <motion.p
-            className="text-axl font-black text-neutral300"
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ delay: 1.4 }}
-          >
-            Web Applications
-          </motion.p>
-        </div>
-      </div>
+          View Projects
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </motion.div>
     </div>
   );
 };

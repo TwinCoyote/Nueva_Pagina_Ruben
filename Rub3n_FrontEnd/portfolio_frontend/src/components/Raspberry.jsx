@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useMemo } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
 
 export function Raspberry(props) {
   const groupRef = useRef();
-  const { nodes, materials, animations } = useGLTF("/models/raspberry.glb");
+  const { scene, animations } = useGLTF("/models/raspberry_pi.glb");
   const { actions } = useAnimations(animations, groupRef);
+  const clonedScene = useMemo(() => scene.clone(true), [scene]);
 
   useEffect(() => {
     if (animations && animations.length > 0) {
@@ -19,16 +20,11 @@ export function Raspberry(props) {
         rotation={[-Math.PI / 2.3, 1, -1.1]}
         scale={props.scale || 0.3}
       >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Object_3.geometry}
-          material={materials.rpi_L}
-          position={[0, 0, 0]}
-        />
+        <primitive object={clonedScene} />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/models/raspberry.glb");
+useGLTF.preload("/models/raspberry_pi.glb");
+

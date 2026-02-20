@@ -1,152 +1,64 @@
 export const myProjects = [
   {
     id: 1,
-    title: "Page for Public Accountants",
+    title: "PLC - Conexiones Electricas",
     description:
-      "A polished presentation website gives businesses a professional online presence, integrating deployment and email management with expert oversight.",
+      "During this PLC training focused on electrical connections and control logic, each participant was assigned an Allen-Bradley PLC to work with.",
     subDescription: [
-      "A well-designed presentation website provides a polished view of a business, offering a professional first impression",
-      "Additionally, the website deployment is managed alongside email administrators, each overseeing their respective domain expertise.",
+      "Using provided wiring diagrams and real-world control requirements, we had to design and build the corresponding electrical",
+      "setup step by step. The course lasted five Sundays of six hours each, combining theory and hands-on practice.",
+      "Through this experience, I reinforced my understanding of industrial wiring, input/output configuration, and PLC troubleshooting in automation systems.",
     ],
-    href: "https://www.lrcmx.com/",
+    href: "@LogicaPLC",
     logo: "",
-    image: "/assets/projects/conta.png",
+    image: "/assets/Certificados/conexiones.jpg",
     tags: [
       {
         id: 1,
-        name: "HTML",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "Vite",
-        path: "/assets/logos/vitejs.svg",
-      },
-      {
-        id: 4,
-        name: "CSS",
-        path: "/assets/logos/css3.svg",
+        name: "Siemens",
+        path: "/assets/logos/sie.svg",
       },
     ],
   },
   {
     id: 2,
-    title: "Page for a group of companies",
+    title: "PLC - Programación Basica",
     description:
-      "A page where you have your services together in an organized and complemented way by company",
+      "This was a continuation of the previous PLC course, focused on basic programming in Ladder and SCL languages for Siemens PLCs",
     subDescription: [
-      "A comprehensive website was developed for an industrial group, integrating individual pages for each company with descriptions, contact forms, and product catalogs",
-      "Additionally, a centralized website for the entire group was created, along with professional email services using the group’s domain.",
+      "The course lasted six Sundays of five hours each, combining theory and practical exercises. Although I already had experience with",
+      "programming PLCs, this course allowed me to deepen my knowledge in logic design using Ladder language and reinforce",
+      "structured programming techniques in SCL. Through hands-on practice, I strengthened my ability to create clear and reliable control logic for industrial automation systems.",
     ],
-    href: "https://www.grupogn.com/",
+    href: "@LogicaPLC",
     logo: "",
-    image: "/assets/projects/guerrero.png",
+    image: "/assets/Certificados/plc2.jpg",
     tags: [
       {
         id: 1,
-        name: "Gatsby",
-        path: "/assets/logos/gatsby.png",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "CSS",
-        path: "/assets/logos/css3.svg",
+        name: "Siemens",
+        path: "/assets/logos/sie.svg",
       },
     ],
   },
   {
     id: 3,
-    title: "Wireless Jammer Device",
+    title: "PLC - Programacion Avanzada",
     description:
-      "An embedded system designed to generate controlled RF interference for testing and experimentation in wireless communications.",
+      "In this continuation of the PLC training, the course lasted six days of five hours each and focused on more advanced industrial automation topics.",
     subDescription: [
-      "This project integrates custom PCB design, microcontroller programming (Embedded C), and software control for precise signal manipulation",
-      "It demonstrates hands-on expertise in RF circuits, embedded systems, and hardware-software integration, ideal for industrial and research applications.",
+      "Each participant was provided with a PLC along with IoT communication modules, and we began exploring HMI (Human-Machine Interface) design. ",
+      "The hands-on exercises allowed us to integrate the PLC with HMI screens, enabling real-time monitoring and control. This experience strengthened my",
+      "understanding of modern automation systems, communication protocols, and interface design for industrial applications.",
     ],
-    href: "",
+    href: "@LogicaPLC",
     logo: "",
-    image: "/assets/projects/Jamm.jpeg",
+    image: "/assets/Certificados/plc.png",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/arduino.svg",
-      },
-      {
-        id: 2,
-        name: "Altium",
-        path: "/assets/logos/Altium.png",
-      },
-      {
-        id: 3,
-        name: "ESP32",
-        path: "/assets/logos/ESP32.svg",
-      },
-      {
-        id: 4,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 5,
-        name: "Fusion 360",
-        path: "/assets/logos/Fusion.png",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Wi-Fi Marauder Device",
-    description:
-      "A compact embedded device for Wi-Fi network scanning, monitoring, and security testing.",
-    subDescription: [
-      "This project involves firmware development and hardware integration using ESP32 microcontrollers, GPS Neo-6",
-      "It enables real-time Wi-Fi packet capture, deauthentication, and signal analysis through a custom PCB and embedded C programming",
-      "The system showcases expertise in wireless communication protocols, embedded systems, and IoT security applications.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/marauder.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "Altium",
-        path: "/assets/logos/Altium.png",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "ESP32",
-        path: "/assets/logos/ESP32.svg",
-      },
-      {
-        id: 5,
-        name: "Fusion 360",
-        path: "/assets/logos/Fusion.png",
+        name: "Siemens",
+        path: "/assets/logos/sie.svg",
       },
     ],
   },
